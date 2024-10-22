@@ -1,4 +1,6 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HeroSlider = () => {
   const settings = {
@@ -6,16 +8,16 @@ const HeroSlider = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 1
   };
 
   return (
     <Slider {...settings}>
-      <div className="bg-cover h-96" style={{ backgroundImage: "url(/images/hero1.jpg)" }}>
-        <div className="text-white p-10">Highlight Buch 1</div>
+      <div>
+        <img src="/images/hero-image1.jpg" alt="Book Series 1" />
       </div>
-      <div className="bg-cover h-96" style={{ backgroundImage: "url(/images/hero2.jpg)" }}>
-        <div className="text-white p-10">Highlight Buch 2</div>
+      <div>
+        <img src="/images/hero-image2.jpg" alt="Book Series 2" />
       </div>
     </Slider>
   );
